@@ -6,13 +6,23 @@ public class grahhh {
         String trash = "";
         System.out.println("give me an int");
         if (scanner.hasNextInt()){
+            num1 =scanner.nextInt();
             if (num1 > 0) {
+                System.out.println("your number is positive");
 
             }
-
+                else if (num1 < 0) {
+                System.out.println("your number is negitive");
+            }
+            else {
+                System.out.println("your number is 0");
+            }
 
         }
-
+        else {
+            trash = scanner.nextLine();
+            System.out.println("your input is trash " + trash);
+        }
 
 
     }
